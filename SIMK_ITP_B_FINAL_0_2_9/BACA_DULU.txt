@@ -1,0 +1,14 @@
+SIMK ITP B — BACA DULU (REVISI 0.2.9)
+
+1. Ekstrak ZIP. Di dalamnya ada satu folder bernama SIMK_ITP_B_FINAL_0_2_9.
+2. Buka folder tersebut. Pastikan package.json, MULAI_SIMK.bat, src, supabase, tests, docs, dan scripts terlihat langsung di dalamnya.
+3. Klik dua kali MULAI_SIMK.bat. Jangan membuka PowerShell dan jangan mengetik perintah manual.
+4. Saat pertama kali, peluncur membuat package-lock.json ASLI dari registry npm, kemudian memasang dependency termasuk TypeScript dan Vite. Koneksi internet aktif diperlukan.
+5. Peluncur memverifikasi cache npm, memasang dari lockfile, dan hanya menjalankan rebuild untuk esbuild@0.28.2.
+6. Peluncur menjalankan tes, TypeScript, dan build. Website hanya dibuka jika ketiganya lulus.
+7. package-lock.json dibuat otomatis di folder proyek pada pemakaian pertama. Simpan file itu bersama proyek; jangan dihapus.
+8. Browser akan membuka http://127.0.0.1:5173 setelah server benar-benar merespons. Jangan tutup jendela terminal selama website digunakan. Tekan Ctrl+C untuk berhenti.
+
+Jika proses gagal, jangan jalankan npm audit fix --force dan jangan ubah Execution Policy PowerShell. Ambil screenshot seluruh pesan error.
+
+BATAS: Ini prototipe demo lokal. UI belum seluruhnya tersambung ke Supabase dan AI live. Jangan masukkan data akademik asli atau publikasikan sebagai sistem operasional sebelum integrasi backend dan pengujian keamanan staging selesai.
